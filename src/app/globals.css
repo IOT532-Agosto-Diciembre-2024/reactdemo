@@ -1,21 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+#pokedex {
+  width: 800px;
+  height: 400px;
+  background-color: red;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+#pokedata {
+  width: 400px;
+  height: 100%;
+  float: left;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+#inputs {
+  width: 400px;
+  height: 100%;
+  float: right;
+
+}
+
+#buttonContainer {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  margin-top: 20px;
+}
+
+#display {
+  width: 70%;
+  height: 40px;
+  background-color: cadetblue;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  height: 50px;
+}
+
+.searchButton{
+  width: 100%;
+  margin-top: 50px;
+  height: 50px;
 }
